@@ -1,0 +1,162 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.header{
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  color: #929f7e;
+  border-left: 1px solid #929f7e;
+  border-right: 1px solid #929f7e;
+  border-top: 1px solid #929f7e;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:active{
+  color: #5e9542de;
+}
+
+li{
+  list-style: none;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #929f7e;
+  height: 3rem;
+  margin-top: 0;
+
+}
+.nav li{
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.nav li.active {
+  background-color: #5e9542de;
+  padding: 10px;
+  border: 1px solid #929f7e;
+  border-radius: 5px;
+}
+
+.money{
+  font-weight: 800;
+}
+.products{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  order: 1;
+  width: 1350px;
+}
+
+.product img{
+  width: 250px;
+  height: 250px;
+}
+.add{
+  width: 250px;
+  height: 30px;
+  border: 1px solid #929f7e;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.add:hover{
+  background-color: #929f7e;
+  color: white;
+}
+.cartPage{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cartPage h4{
+  font-size: 25px;
+  margin-top: -.5rem;
+  border-bottom: 4px solid #929f7e;
+}
+.cartItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  order: 1;
+  width: 1350px;
+}
+.cartItems img{
+  width: 250px;
+  height: 250px;
+}
+.carttags {
+  background-color: #929f7e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 1rem;
+
+}
+.carttags p:nth-child(3){
+  font-weight: 800;
+
+}
+.carttags p:nth-child(2){
+  margin-top: -1rem;
+}
+.quan{
+  font-weight: 800;
+}
+.total_amt{
+  margin-top: -.5rem;
+}
+
+/* 
+@media (max-width: 768px) {
+  .products {
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header {
+    background-color: red;
+    color: white;
+    border-color: red;
+    margin-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: greenyellow;
+    height: 3rem;
+  
+  }
+  .nav li{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .nav li.active {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+ 
+} */
